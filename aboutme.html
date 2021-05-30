@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aboutme assignment</title>
+	<style>
+		.list-item{
+			color: red;
+		}
+        .pic-img{
+        	width: 30%;
+        	height: 500px;
+        	margin: 50px;
+        }
+	</style>
+</head>
+<body>
+	<h1>About me</h1>
+	<ul class="listitem" style="color: red;">
+		<li>NICKNAME    <span id="nickname"></span></li>
+		<li>FAVOURITES    <span id="favourites"></span></li>
+		<li>HOMETOWN    <span id="hometown"></span></li>
+	</ul>
+  
+
+  <script type="text/javascript">
+  	 document.body.style.fontFamily ="Arial,sans-serif";
+  	 var nickName = document.getElementById('nickname');
+  	 nickName.innerHTML = '= Betterman';
+  	 var favourites = document.getElementById('favourites'); 
+  	 favourites.innerHTML = ' = Genre of music: rap, tvshowing: Anime, color: black, Artiste alive: Post, Dead: Juice, Role model: Kanye....etc'
+  	 var homeTown = document.getElementById('hometown'); 
+  	 homeTown.innerHTML = ' = Elmina';
+  	 var items=document.getElementsByTagName('li');
+  	  for (var i = 0; i < items.lenght; i++){
+  	  	   items[i].className = 'list-item';
+  	  }
+
+  	  var image = document.createElement('img');
+  	  image.src = "me2.jpg";
+  	  image.className = 'pic-img';
+  	  document.body.appendChild(image);
+  </script>
+</body>
+</html>
